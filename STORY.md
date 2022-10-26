@@ -4,7 +4,7 @@ WhizCash Bank had its annual security audit. The result was forwarded to Alice, 
 
 # Result of the External Security Audit
 
-After the external security audit of the bank's infrastructure, a security vulnerability was found. Although the containers were started with the read-only flag, an auditor was able to execute a syscall.
+After the external security audit of the bank's infrastructure, a security vulnerability was found. Although the containers were started with the read-only flag, an auditor was able to execute a binary executable like malware would do.
 
 ## How does the exploit work
 
