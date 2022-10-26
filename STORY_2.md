@@ -1,10 +1,10 @@
-# WhizCash Bank - Request from a colleague
+# WhizCash Bank - Request from a Bob
 
-A colleague comes to you and asks for your support. His goal is to protect a file from read access. He has found 2 binaries on the internet with which he tries to read the file.
+Bob comes to Alice and asks for her support. His goal is to protect a file from read access. After a research in the internet he found 2 binaries on the internet with which he tries to read the file.
 
 ## What your colleague tried
 
-The colleague has prepared a Docker image that he gives you to test. He shows you the following on his computer:
+Bas has prepared a Docker image that he gives Alice to test. He shows Alice the following on his computer:
 
 1. First he creates a container
 
@@ -22,4 +22,7 @@ The colleague has prepared a Docker image that he gives you to test. He shows yo
     
        nsjail --disable_clone_newcgroup --disable_clone_newuser --disable_clone_newns --disable_clone_newuts --disable_clone_newipc --disable_clone_newpid --disable_clone_newnet -Mo --chroot / --seccomp_string 'POLICY a { DENY { read } } USE a DEFAULT ALLOW' -- /bypass
 
-5. Your colleague is at a loss and asks you for help and asks you if you know what happened.
+
+# Alice want to help
+
+Alice is a team player and would like to help Bob with his problem. She would like to take a closer look at why the binary can read the file, even though read syscall was prevented by the seccomp profile.
