@@ -7,7 +7,7 @@ The aim of this task is to build an understanding of seccomp, and to use seccomp
 1. Prepare and read about seccomp so you get a feel for what seccomp is all about. You should then be able to talk about terms like syscalls, seccomp and seccomp profile.
 2. Create an Exoscale Account and a VM (Linux Ubuntu 22.04 LTS 64-bit) and make sure you can SSH into it. **If you have already received an invitation by e-mail for Exoscale, you can of course use this account.**
 3. Read [the Story](STORY.md).
-4. Find a way to prevent the syscall openat so that the security gap can be closed.
+4. Find a way to prevent the syscall memfd_create so that the security gap can be closed.
 
 ## Additional task
 
