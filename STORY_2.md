@@ -4,7 +4,7 @@ Bob comes to Alice and asks for her support. His goal is to protect a file from 
 
 ## What your colleague tried
 
-Bas has prepared a Docker image that he gives Alice to test. He shows Alice the following on his computer:
+Bob's idea was to secure the file by using seccomp and preventing the read syscall. Bob has prepared a Docker image that he gives Alice to test. He shows Alice the following on his computer:
 
 1. First he creates a container
 
@@ -22,7 +22,8 @@ Bas has prepared a Docker image that he gives Alice to test. He shows Alice the 
     
        nsjail --disable_clone_newcgroup --disable_clone_newuser --disable_clone_newns --disable_clone_newuts --disable_clone_newipc --disable_clone_newpid --disable_clone_newnet -Mo --chroot / --seccomp_string 'POLICY a { DENY { read } } USE a DEFAULT ALLOW' -- /bypass
 
+Bob is wondering: Even though both binaries are started with the same seccomp restriction to read the file it seems to be not the case for the second executable which somehow bypasses it.
 
 # Alice want to help
 
-Alice is a team player and would like to help Bob with his problem. She would like to take a closer look at why the binary can read the file, even though read syscall was prevented by the seccomp profile.
+Alice is a team player and would like to help Bob with his problem. She would like to take a closer look at why the second executable can read the file, even though both binaries are started with the same seccomp restriction to read the file.

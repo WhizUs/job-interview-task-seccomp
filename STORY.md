@@ -1,12 +1,12 @@
 # WhizCash Bank
 
-WhizCash Bank had its annual security audit. The result was forwarded to Alice, a DevOps Engineer in WhizCash Bank.
+WhizCash Bank had its annual security audit. The result was forwarded to Alice, a DevSecOps Engineer in WhizCash Bank.
 
 # Result of the External Security Audit
 
-After the external security audit of the bank's infrastructure, a security vulnerability was found. Although the containers were started with the read-only flag, an auditor was able to write something to the file system.
+After the external security audit of the bank's infrastructure, a security vulnerability was found. Although the containers were started with the read-only flag, an auditor was able to execute a syscall.
 
-## How the exploit does work
+## How does the exploit work
 
 The auditor gives Alice the following instructions on how the exploit can currently be executed:
 
