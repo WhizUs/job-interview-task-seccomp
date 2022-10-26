@@ -12,8 +12,10 @@ The aim of this task is to build an understanding of seccomp, and to use seccomp
 ## Additional task
 
 * Check out [tracee](https://github.com/aquasecurity/tracee) from aquasecurity to trace syscalls.
+* Check out how you could use seccomp to secure a Kubernetes Cluster
 
 ## Notes
 
 * Link to seccomp description: https://www.kernel.org/doc/html/v4.18/userspace-api/seccomp_filter.html
 * List of syscalls: https://de.wikipedia.org/wiki/Liste_der_Linux-Systemaufrufe
+* Kubernetes Seccomp Documentation: https://kubernetes.io/docs/tutorials/security/seccomp/
